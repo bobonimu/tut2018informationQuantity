@@ -1,4 +1,4 @@
-package s4.B183353; // Please modify to s4.Bnnnnnn, where nnnnnn is your student ID. 
+package s4.B183353; // Please modify to s4.Bnnnnnn, where nnnnnn is your student ID.
 import java.lang.*;
 import s4.specification.*;
 
@@ -25,6 +25,9 @@ public class Frequencer implements FrequencerInterface{
 	int targetLength = myTarget.length;
 	int spaceLength = mySpace.length;
 	int count = 0;
+  // targetLengthが1以上の時、探索する際にmyspaceの配列のサイズを超えてしまう。
+  //よって、for分の範囲を以下のようにする。
+  //for(int start = 0; start<spaceLength - targetLength + 1; start++) {
 	for(int start = 0; start<spaceLength; start++) { // Is it OK?
 	    boolean abort = false;
 	    for(int i = 0; i<targetLength; i++) {

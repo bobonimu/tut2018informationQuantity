@@ -93,7 +93,6 @@ public class TestCase {
       e.printStackTrace(); //スタックトレースを出力する
 	}
 
-
   try {
 	    FrequencerInterface  myObject;
 	    int freq;
