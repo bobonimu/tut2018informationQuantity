@@ -236,7 +236,7 @@ public class Frequencer implements FrequencerInterface{
           System.out.println("Exception occurred: STOP");
       }
 
-      for(int i = suffixArray.length-1; i > 0 ; i--){
+      for(int i = suffixArray.length-1; i >= 0 ; i--){
         if(targetCompare(suffixArray[i],start,end) == 0){
           System.out.print("end :");
           System.out.println(i+1);
